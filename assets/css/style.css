@@ -1044,7 +1044,7 @@ hr {
 
 /* Map */
 .section--map {
-    background: url("./images/map-bg.jpg");
+    background: url("../images/map-bg.jpg");
 }
 
 .map {
