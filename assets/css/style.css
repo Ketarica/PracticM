@@ -1043,6 +1043,9 @@ hr {
 
 
 /* Map */
+.section--map {
+    background: url("assets/images/map-bg.jpg");
+}
 
 .map {
     text-align: center;
