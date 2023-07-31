@@ -323,16 +323,24 @@ hr {
 .slider__item.active:before {
     content: "";
     display: block;
-    width: 70px;
+    width: 0px;
     height: 3px;
 
-    background-color: #f38181;
+    background-color: #e73232;
 
     position: absolute;
     top: -3px;
     left: 0;
     z-index: 1;
 }
+
+.slider__item.active:hover::before {
+    content: "";
+    width: 280px;
+    background-color: #e73232;
+    transition: 2s;
+}
+
 
 .slider__num {
     font-size: 24px;
@@ -892,6 +900,8 @@ hr {
 
 
 /* Clients */
+
+
 .clients {
     display: flex;
     flex-wrap: wrap;
@@ -1043,9 +1053,6 @@ hr {
 
 
 /* Map */
-.section--map {
-    background: url("../images/map-bg.jpg");
-}
 
 .map {
     text-align: center;
