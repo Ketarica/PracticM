@@ -309,7 +309,7 @@ hr {
     position: relative;
 
     border-top: 3px solid #fff;
-    opacity: .7;
+    opacity: 1;
 
     font-size: 18px;
     color: #fff;
@@ -321,11 +321,11 @@ hr {
 }
 
 .slider__item.active:before {
-    content: "";
     display: block;
+    content: "";
     width: 0px;
     height: 3px;
-
+    opacity: 0;
     background-color: #e73232;
 
     position: absolute;
@@ -335,10 +335,13 @@ hr {
 }
 
 .slider__item.active:hover::before {
+    display: block;
+    opacity: 1;
+    transition: 5s;
     content: "";
     width: 100%;
     background-color: #e73232;
-    transition: 2s;
+    transition: 1s;
 }
 
 
