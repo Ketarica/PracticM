@@ -336,7 +336,7 @@ hr {
 
 .slider__item.active:hover::before {
     content: "";
-    width: 280px;
+    width: 100%;
     background-color: #e73232;
     transition: 2s;
 }
