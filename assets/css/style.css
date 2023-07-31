@@ -1,3 +1,18 @@
+.anim{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.anim.show{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+:root {
+    --animate-duration: 5s;
+    --animate-delay: 5s;
+  }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
