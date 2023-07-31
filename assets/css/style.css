@@ -1057,11 +1057,19 @@ hr {
 
 /* Map */
 
+.section--map {
+    background-image: url("/assets/images/map-bg.jpg");
+    margin-top: 1vw;
+    padding: 40px 0;
+}
+
 .map {
     text-align: center;
+   
 }
 
 .map__title {
+    
     font-size: 24px;
     color: #f38181;
     font-weight: 700;
