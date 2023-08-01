@@ -2,8 +2,6 @@ function onEntry(entry){
     entry.forEach(change => {
         if(change.isIntersecting){
             change.target.classList.add('show');
-        } else{
-        change.target.classList.remove('show');
         }
     });
 }
