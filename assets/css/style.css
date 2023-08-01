@@ -392,7 +392,7 @@ hr {
 
 .section--map {
     padding: 40px 0;
-    background: #e6e6e6 url("../images/map-bg.jpg") center no-repeat / cover;
+    background: #e6e6e6 url("/assets/images/map-bg.jpg") center no-repeat / cover;
 }
 
 .section__header {
@@ -1084,7 +1084,7 @@ hr {
 /* Map */
 
 .section--map {
-    background-image: url("/assets/images/map-bg.jpg");
+    background: url("/assets/images/map-bg.jpg") no-repeat center;
     margin-top: 1vw;
     padding: 40px 0;
 }
@@ -1117,19 +1117,27 @@ hr {
     text-decoration: none;
 }
 
-.map__title a:hover {
+.map__title:hover {
     text-decoration: underline;
 }
 
 
 .map__wide {
+    display: none;
     width: 100%;
     padding: 0;
 }
 
-.map__wide:hover {
+.section--map:hover {
+  cursor: pointer;
+}
+
+
+
+.section--map.active .map__wide {
     display: block;
 }
+
 
 /* Footer */
 .footer {
