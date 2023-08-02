@@ -1,5 +1,5 @@
 .anim{
-    opacity: 0;
+    opacity: 1;
     transition: 0.3s;
 }
 
@@ -55,6 +55,8 @@ hr {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 
@@ -84,7 +86,7 @@ hr {
 
 .intro__title {
     color: #fff;
-    font-size: 150px;
+    font-size: 140px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -1084,6 +1086,7 @@ hr {
 /* Map */
 
 .section--map {
+    z-index: 1;
     background: url("/assets/images/map-bg.jpg") no-repeat center;
     margin-top: 1vw;
     padding: 40px 0;
@@ -1122,22 +1125,19 @@ hr {
 }
 
 
-.map__wide {
-    display: none;
-    width: 100%;
-    padding: 0;
-}
-
 .section--map:hover {
   cursor: pointer;
 }
 
 
-
-.section--map.active .map__wide {
-    display: block;
+.map__wide {
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    opacity: 1;
+    z-index: -1;
+    margin-bottom: 0px;
 }
-
 
 /* Footer */
 .footer {
@@ -1375,7 +1375,7 @@ hr {
     }
 
     .intro__title {
-        font-size: 120px;
+        font-size: 140px;
     }
 
     /* Reviews */
@@ -1388,11 +1388,11 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 32px;
+        font-size: 45px;
     }
 
     .intro__title {
-        font-size: 80px;
+        font-size: 110px;
     }
 
     /* Stat */

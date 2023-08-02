@@ -1,7 +1,7 @@
 function onEntry(entry){
     entry.forEach(change => {
         if(change.isIntersecting){
-            change.target.classList.add('show');
+            change.target.classList.add('animate__zoomIn');
         }
     });
 }
