@@ -1120,14 +1120,6 @@ hr {
     text-decoration: none;
 }
 
-.map__title:hover {
-    text-decoration: underline;
-}
-
-
-.section--map:hover {
-  cursor: pointer;
-}
 
 
 .map__wide {
